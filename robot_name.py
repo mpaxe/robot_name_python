@@ -15,5 +15,6 @@ class Robot(object):
         return name
    
     def reset(self):
-        self.name = "AA000"
+        random.seed()
+        self.name = Robot().name
         
